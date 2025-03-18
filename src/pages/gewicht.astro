@@ -1,0 +1,26 @@
+---
+import BasicLayout from "../layouts/basicLayout.astro";
+import Scale from "../images/scale.png";
+import BodyWeightTracker from "../components/BodyWeightTracker.vue";
+const themeColor = "#d8e488";
+---
+
+<head>
+  <meta name="theme-color" content={themeColor} />
+</head>
+
+<BasicLayout
+  title="Koerpergewicht"
+  ImageSrc={Scale}
+  ImageAlt="Waage"
+  backLink="/"
+>
+  <h1>K&ouml;rpergewicht</h1>
+</BasicLayout>
+<BodyWeightTracker client:load />
+
+<style>
+  body {
+    background-color: var(--yellow);
+  }
+</style>

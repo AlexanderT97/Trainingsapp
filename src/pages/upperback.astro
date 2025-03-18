@@ -1,0 +1,10 @@
+---
+import BasicLayout from "../layouts/basicLayout.astro";
+import Hantel from "../images/hantel.png";
+import WorkoutTable from "../components/WorkoutTable.vue";
+---
+
+<BasicLayout title="Upperback" ImageSrc={Hantel} ImageAlt="Hantel" backLink="/mittwoch">
+  <h1>Upperback</h1>
+  <WorkoutTable workoutName="upperback" client:load />
+</BasicLayout>

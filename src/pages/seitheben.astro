@@ -1,0 +1,10 @@
+---
+import BasicLayout from "../layouts/basicLayout.astro";
+import Hantel from "../images/hantel.png";
+import WorkoutTableRL from "../components/WorkoutTableRL.vue";
+---
+
+<BasicLayout title="Seitheben Seilzug" ImageSrc={Hantel} ImageAlt="Hantel" backLink={"javascript:history.back()"}>
+  <h1>Seitheben Seilzug</h1>
+  <WorkoutTableRL workoutName="seitheben" client:load />
+</BasicLayout>
