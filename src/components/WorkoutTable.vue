@@ -116,6 +116,10 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+input:focus {
+  outline: var(--white);
+}
+
 .button-container {
   display: flex;
   justify-content: center;
