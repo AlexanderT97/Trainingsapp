@@ -117,7 +117,7 @@ input::-webkit-inner-spin-button {
 }
 
 input:focus {
-  outline: var(--white);
+  outline: 2px solid var(--white);
 }
 
 .button-container {
